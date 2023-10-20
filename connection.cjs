@@ -5,7 +5,7 @@ const serviceAccount = require("./key.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: process.env.DB_URL
+  databaseURL: "https://pf-2023-aleja-yesid-default-rtdb.firebaseio.com/"
 });
 
 const auth = admin.auth();

@@ -11,14 +11,14 @@ const { getDatabase }  = require ("firebase/database");
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {  
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.DOMAIN,
-  databaseURL: process.env.DB_URL,
-  projectId: process.env.projectId,
-  storageBucket: process.env.storageBucket,
-  messagingSenderId: process.env.messagingSenderId,
-  appId: process.env.appId,
-  measurementId: process.env.measurementId
+  apiKey: "AIzaSyCQKXbJN9BSYqtf1Fu9gZxHDNPkHP_857k",
+  authDomain: "pf-2023-aleja-yesid.firebaseapp.com",
+  databaseURL: "https://pf-2023-aleja-yesid-default-rtdb.firebaseio.com/",
+  projectId: "pf-2023-aleja-yesid",
+  storageBucket: "pf-2023-aleja-yesid.appspot.com",
+  messagingSenderId: "539143780591",
+  appId: "1:539143780591:web:26d172e6445cbc5974431a",
+  measurementId: "G-3WBM5BYKQS"
 };
 
 // Initialize Firebase
