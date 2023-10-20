@@ -6,7 +6,7 @@ const { getAuth } = require ("firebase/auth");
 const { getFirestore }  = require ("firebase/firestore");
 const { getDatabase }  = require ("firebase/database");
 // TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+// https://firebase.google.com/docs/web/setup#available-libraries Faq
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
