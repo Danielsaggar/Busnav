@@ -1,5 +1,5 @@
 // updateSelectBox.js
-const { realdb }  = require('./../../connection.js');
+const { realdb }  = require('./../../connection.cjs');
 require('firebase/database');
 const selectBox = document.getElementById('selectBox');
 

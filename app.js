@@ -15,9 +15,14 @@ app.set('view engine', 'pug');
 import indexRouter from './routes/get/route-index.cjs';
 import asignacionRouter from './routes/get/route-asignacion.cjs';
 import conductoresRouter from './routes/get/route-conductores.cjs';
+import OnlineUsers from './routes/get/users-online.cjs';
+import Conductor from './routes/get/route-conductor.cjs';
+import Historicos from './routes/get/route-historicos.cjs';
+
 import placaRouter from './routes/post/route-placa.cjs';
 import rutasRouter from './routes/post/route-rutas.cjs';
 import updateRouter from './routes/post/route-update.cjs';
+import checkRouter from './routes/post/route-checklist.cjs';
 
 
 app.use('/placa/public', express.static('public'));
@@ -28,10 +33,14 @@ app.use(express.static('public'));
 app.use('/', indexRouter);
 app.use('/', asignacionRouter);
 app.use('/', conductoresRouter);
+app.use('/', OnlineUsers);
+app.use('/', Conductor);
+app.use('/', Historicos);
 
 //Manejo de solicitudes POST
 app.use('/placa', placaRouter);
 app.use('/ruta', rutasRouter);
 app.use('/update', updateRouter);
+app.use('/check', checkRouter);
 
 export default app;

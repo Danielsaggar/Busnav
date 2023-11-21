@@ -6,7 +6,7 @@ const { ref, set, onValue, onChildChanged, updat, get  } =require("firebase/data
 const usuariosOnline = ref(realdb, "conductores/");
 
 /* GET home page. */
-router.get('/', async function(req, res, next) {  
+router.get('/historicos', async function(req, res, next) {  
   const arrayUser =[]
   await get(usuariosOnline)
   .then((snapshot) => {
@@ -26,7 +26,7 @@ router.get('/', async function(req, res, next) {
   .catch((error) => {
     console.error('Error al obtener datos:', error);
   });    
-  res.render('index', {arrayUser});
+  res.render('historicos', {arrayUser});
 });
 
 module.exports = router;
