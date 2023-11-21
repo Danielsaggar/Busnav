@@ -1,170 +1,214 @@
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
  #gmp-map {
-    height: 100%;
-    display: block;
-  }
-  *{
-    padding: 0%;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Optional: Makes the sample page fill the window. */
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    padding: 0;    
-  }
-
-  header{    
-    text-align: center;    
-    width: 100%;
-    height: 10vh;
-    background-size: 100% 100%;
-    background-position: center;
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    background-color: #CAFFB8;
-  }
-  .HL{    
-    margin-left: 2vh;
-    margin-top: 2vh;
-    width: 50vh;
-    height: 10vh;
-    text-align: left;
-  } 
-  .HL div{   
-    display: inline-block;
-    vertical-align: middle; /* Alinear verticalmente con el centro */
-    top: 0;   
-    width: 45%;        
-    margin-right: 0%;        
-    text-align: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar horizontalmente */       
-  } 
-
-  
-
-  #left{      
-    float: left;
-    justify-content: center;        
-    
-    width: 75%;
-    height: 100%;    
-    overflow: auto; 
-    text-align: start;      
-  }
-
-  #right{  
-    height: 90vh;
-    float: right;
-    justify-content: center;    
-    right: 2%;
-    
-    width: 25%;
-    height: 100%;      
-    overflow: overlay; 
-    text-align: start;      
-    background-color: #CAFFB8;
-  }
-  #right div{       
-    
-    align-items: center;
-    text-align: center;
-    margin-top: 25%;
-    height: 9%;
-  }
-
-  .button {
-    display: inline-block;
-    background-color: #389a0e;
-    color: #fff;
-    padding: 20px 90px;
-    border-radius: 20px;
-    text-decoration: none;   
-    flex-grow: 4;  
-      }
-
-  .button:hover {
-    background-color: #1ae03e;
-  }
-
-
-
-	
-nav{
-  align-items: center;
-  width: 100%;
-  padding: 10px 20px;
-  position: fixed;
-  border-bottom: 1px;
-  list-style: none;
+  height: 100%;
+  display: block;
+}
+*{
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;    
+}
 
-  
-
-
-
-header{
+header{    
+  text-align: center;    
+  width: 20%;
+  height: 10vh;
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;    
   align-items: center;
-  background-color: #CAFFB8;
-  width: 1000px;
+  background-color: #CAFFB8;    
   list-style: none;
   margin: 0px auto;
-  
- margin-left: 75%;
- margin-bottom: 50px;
+  margin-left: 75%;
+  margin-bottom: 50px;    
+}
+.HL{    
+  margin-left: 2vh;
+  margin-top: 8vh;
+  width: 200%;
+  height: 10vh;
+  text-align: left;
+} 
+.HL div{   
+  display: inline-block;
+  vertical-align: middle; /* Alinear verticalmente con el centro */
+  top: 0;   
+  width: 45%;        
+  margin-right: 0%;        
+  text-align: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar horizontalmente */       
+} 
+.HL #selector {
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+}
 
+form {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+select,
+input[type="submit"] {
+  padding: 10px;
+  margin-top: 5px;
 }
 
 
+#left{      
+  float: left;
+  justify-content: center;        
+  
+  width: 75%;
+  height: 100%;    
+  overflow: auto; 
+  text-align: start;      
+}
+
+#right{  
+  height: 90vh;
+  float: right;
+  justify-content: center;    
+  right: 2%;
+  padding: 10% 0 0 0;
+  width: 25%;
+  height: 100%;      
+  overflow: overlay; 
+  text-align: start;      
+  background-color: #CAFFB8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#right div{           
+  align-items: center;
+  text-align: center;
+  margin-top: 25%;
+  height: 9%;
+  position: relative;
+}
+
+#right #ruta{               
+  position: relative;    
+}
+
+#right #ruta #puntos{       
+  width: 100%;        
+  height: auto;
+  position: relative;    
+}
+
+.button {
+  display: inline-block;
+  background-color: #389a0e;
+  color: #fff;
+  padding: 20px 90px;
+  border-radius: 20px;
+  text-decoration: none;   
+  flex-grow: 4;  
+    }
+
+.button:hover {
+  background-color: #1ae03e;
+}
+
+
+
+
+nav{
+align-items: center;
+width: 100%;
+padding: 0 40%;
+position: relative;
+border-bottom: 1px;
+list-style: none;
+}
 
 nav ul {list-style: none;
 margin-right: 27cm;
 }
 
-.menu > li{
-  position: relative;
-  display: inline-block;
-  align-items: center;
+.menu > li {
+position: relative;
+display: inline-block;
 }
-.menu >li>a {
-  display: block;
-  padding: 15px 20px;
-  color: #002200;
-  text-decoration: none;
-  font-size: 0.8cm;
-  
+
+.menu > li > a {
+display: block;
+padding: 15px 20px;
+color: #002200;
+text-decoration: none;
+font-size: 0.8cm;
 }
-.menu li a:hover {
-  color: #389a0e;
-  transition: all .3s;
+
+.menu > li > a:hover {
+color: #389a0e;
+transition: all 0.3s;
 }
-/*submenu*/
-.submenu{
-  position: absolute;
-  background-color: #CAFFB8;
-  width: 170%;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1s;
-  align-items: center;
+
+/* Submenu */
+.submenu {
+position: absolute;
+background-color: #CAFFB8;
+width: 100%;
+visibility: hidden;
+opacity: 0;
+transition: opacity 1s;
 }
+
 .submenu li a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 0.5cm;
-  color: #002200;
+display: block;
+padding: 15px;
+text-decoration: none;
+font-size: 0.5cm;
+color: #002200;
 }
+
 .menu li:hover .submenu {
-  visibility: visible;
-  opacity: 1;
+visibility: visible;
+opacity: 1;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+.menu > li {
+  display: block;
+  width: 100%;
+}
+
+.menu > li > a {
+  padding: 15px;
+  text-align: center;
+}
+
+.submenu {
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
+}
+
 .texto{
 color: #002200;
 padding: 50px 20px;
@@ -172,12 +216,12 @@ padding: 50px 20px;
 
 /* Oculta todos los div dentro de #ruta por defecto */
 #ruta div {
-  display: none;
+display: none;
 }
 
 /* Estilo adicional si lo necesitas */
 #ruta h1 {
-  cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el h1 */
-  color: blue; /* Cambia el color del texto */
-  text-decoration: underline; /* Subraya el texto */
+cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el h1 */
+color: blue; /* Cambia el color del texto */
+text-decoration: underline; /* Subraya el texto */
 }
